@@ -9,6 +9,7 @@ This project is my own implementation of the VISA Credit card checker. It was pr
 2. Download and install [Python3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/installing/) if necessary.
 
 3. The Luhn's algorithm is fairly simple to implement. Here is how it checks if 4-5-1-0-1-5-6-0-2-0-1-8-9-7-5-4 is valid:
+   
    -Given a 16-digit credit card number, each two digit starting from the second to last is doubled. We get 8-5-2-0-2-5-12-0-4-0-2-8-18-7-10-4
 
    -From the new string, each 2-digit number will be replaced by the sum of its 2 digits. In our case the 2-digit numbers are 12, 18 and 10. After adding those 2-digit numbers, we get the new string 8-5-2-0-2-5-3-0-4-0-2-8-9-7-1-4 (the single-digit number remaining intact)
